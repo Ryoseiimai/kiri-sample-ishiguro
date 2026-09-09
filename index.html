@@ -78,16 +78,23 @@
     background:#111;
   }
   .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
-  .video-embed-block{margin-bottom:28px;}
+  .video-embed-block{
+    margin:0 0 32px;
+    padding:20px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+  }
   .video-embed-label{
     font-size:13px;
     font-weight:700;
     color:var(--accent);
-    margin-bottom:10px;
+    margin-bottom:12px;
   }
   .video-embed-wrap{
     position:relative;
     width:100%;
+    max-width:100%;
     aspect-ratio:16/9;
     border-radius:6px;
     overflow:hidden;
@@ -240,20 +247,12 @@
 
   <div class="video-embed-block">
     <div class="video-embed-label">この記事の元になった動画</div>
-    <div class="video-embed-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/0QSP01mIaf0"
-        title="マイクロプラスチックの対策がついに判明!! 最新研究で発見された、プラを吸着して排出してくれる発酵食品とは？"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </div>
+    <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/0QSP01mIaf0" title="マイクロプラスチックの対策がついに判明!! 最新研究で発見された、プラを吸着して排出してくれる発酵食品とは？" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
     <div class="video-embed-print">
       <img src="https://i.ytimg.com/vi/0QSP01mIaf0/maxresdefault.jpg" alt="動画サムネイル">
     </div>
     <div class="video-embed-fallback">
-      ▶ 動画を見る： <a href="https://www.youtube.com/watch?v=0QSP01mIaf0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=0QSP01mIaf0</a>
+      ▶ YouTubeで見る： <a href="https://www.youtube.com/watch?v=0QSP01mIaf0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=0QSP01mIaf0</a>
     </div>
   </div>
 
